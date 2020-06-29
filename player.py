@@ -14,3 +14,9 @@ class Player:
     def saveDie(self, index):
         if index < len(self.diceSet) and index >= 0:
             self.diceSet[index].setSaved(True)
+    
+    def reset(self):
+        for d in self.diceSet:
+            d.setSaved(False)
+
+    
