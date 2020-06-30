@@ -6,9 +6,10 @@ from constants import Number
 class Die:
 
     # Constructor
-    def __init__(self):
+    def __init__(self, index):
         self.val = Number.ONE
         self.saved = False
+        self.index = index
 
     def roll(self):
         if not self.saved:
